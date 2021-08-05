@@ -39,6 +39,11 @@
       "text": "code",
       "category": "Code",
       "id": 8
+    },
+    {
+      "text": "new task",
+      "category": "Misc",
+      "id": 9
     }
   ]
 }

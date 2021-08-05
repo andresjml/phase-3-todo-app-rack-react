@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    fetch("http://localhost:3000/tasks")
+    fetch("http://localhost:3000/tasks/")
     .then(res => res.json())
     .then(tasks => this.setState({ tasks }))
   }
@@ -38,7 +38,7 @@ class App extends React.Component {
   handleAddTask = (e) => {
     e.preventDefault()
 
-    fetch("http://localhost:3000/tasks", {
+    fetch("http://localhost:3000/tasks/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
